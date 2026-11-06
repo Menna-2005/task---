@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظام إدارة درجات الطلاب</title>
+    <link rel="stylesheet" href="c.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>🎓 نظام إدارة درجات الطلاب</h1>
+            <p>إدارة الطلاب وحساب درجات الرأفة والمتوسط</p>
+        </header>
+
+        <section class="form-box">
+            <h2>إضافة طالب جديد</h2>
+
+            <form id="studentForm">
+
+                <input type="number" id="studentId"
+                    placeholder="رقم الطالب" required>
+
+                <input type="text" id="studentName"
+                    placeholder="اسم الطالب" required>
+
+                <input type="number" id="studentAverage"
+                    placeholder="درجة الطالب" min="0" max="100" required>
+
+                <button type="submit">إضافة الطالب +</button>
+
+            </form>
+        </section>
+
+        <section class="students-box">
+
+            <h2>قائمة الطلاب</h2>
+
+            <div id="studentsList"></div>
+
+        </section>
+
+        <section class="result-box">
+
+            <h2>نتائج درجات الرأفة</h2>
+
+            <button id="calculateBtn">
+                حساب الدرجات بعد التعديل
+            </button>
+
+            <div id="result"></div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
